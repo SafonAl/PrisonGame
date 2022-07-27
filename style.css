@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #495C83;
+    color: #C8B6E2;
+}
+
+#music{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#player{
+    width: 100px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+
+/* MENU */
+
+#gameLogo{
+    display: flex;
+    justify-content: center;
+}
+
+#gameLogo #logoImg{
+    width: 50vw;
+    margin-top: 5rem;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+#gameStart {
+    font-size: 40px;
+    border-radius: 28px;
+    color: #495C83;
+    background: #A8A4CE;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    text-decoration: none;
+  }
+  
+  #gameStart:hover {
+    background: #C8B6E2;
+    text-decoration: none;
+  }
+  #gameStart:active{
+    background-color:#7A86B6;
+    text-decoration: underline;
+  }
+  #startLink{
+    text-decoration: none;
+    color: #495C83;
+  }
+
+
+/* CELL */
+
+.section{
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.answers{
+    margin-top: 8vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.answers .choiseLink{
+    font-size: 40px;
+    border-radius: 28px;
+    color: #495C83;
+    background: #A8A4CE;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    text-decoration: none;
+    min-width: 400px;
+}
+
+.answers .choiseLink:hover {
+    background: #C8B6E2;
+    text-decoration: none;
+}
+
+
+.answers .choiseLink:active{
+  background-color:#7A86B6;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    /* MENU */
+    #gameStart {
+        font-size: 20px;
+        
+      }
+
+    #gameLogo #logoImg{
+        width: 80vw;
+        margin-top: 5rem;
+    }
+
+    #menu{
+        margin-top: 30vw;
+    }
+
+    /* CELL */
+
+    .section{
+        width: 98%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+
+
+
+}
