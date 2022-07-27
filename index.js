@@ -21,6 +21,7 @@ try{
 
 
     sheetTake.addEventListener("click", function(){
+        sheetTake.classList.add("invisible");
         tearedCup = JSON.parse(localStorage.getItem("tearedCup"));
         bedSheet=1;
         alert("ты взял простыню");
@@ -97,7 +98,7 @@ death.addEventListener("click", function(){
     console.log(cup);
     console.log(rope);
     document.querySelector("#cutSheet").classList.add("invisible");
-
+    sheetTake.classList.remove("invisible");
 })
 }
 catch{
